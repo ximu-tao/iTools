@@ -1,4 +1,9 @@
-# 调用7z命令批量压缩文件
+"""
+调用7z命令批量压缩文件
+@title 批量压缩
+@author XimuTao
+@version 1.0
+"""
 import os
 
 _dir__ = r''
