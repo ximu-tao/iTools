@@ -1,3 +1,10 @@
+"""
+数据库操作简化
+将数据从文件(如 CSV)转移到数据库
+@title file2db
+@author XimuTao
+@version 2.0
+"""
 import tomysql
 from queue import Queue
 
