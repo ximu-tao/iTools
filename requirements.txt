@@ -1,0 +1,4 @@
+xeger==0.3.5
+pymysql~=1.0.2
+toml~=0.10.2
+webdav4~=0.9.8
