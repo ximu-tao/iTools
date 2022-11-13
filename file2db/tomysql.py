@@ -45,7 +45,12 @@ class ToMySQLBuilder:
             self.__cursor = self.__connect.cursor()
             while not self.__dataQueue.empty():
                 line = self.__dataQueue.get()
-                self.__cursor.execute(self.__sql, line)
+                # print( self.__sql , line )
+                try:
+                    self.__cursor.execute(self.__sql, line)
+                except Exception as e:
+                    print(e)
+                    print( self.__sql , line )
 
             self.__connect.commit()
             self.__cursor.close()
