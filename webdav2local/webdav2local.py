@@ -28,6 +28,7 @@ def download_files(from_path: str, to_path, chunk_size: int = None, callback=Non
             download_files(i, os.path.join(to_path, os.path.basename(i)), chunk_size, callback)
 
 def download_dir( base_url , auth ,  from_path: str, to_path ):
+    global __client__
     __client__ = Client(base_url=base_url,
                     auth=auth )
     download_files( from_path , to_path )
