@@ -20,6 +20,9 @@ def download_files(from_path: str, to_path, chunk_size: int = None, callback=Non
     else:
         file_list = __client__.ls(path=from_path, detail=False)
 
+        if len(file_list) == 0:
+            return
+
         try:
             os.mkdir(to_path)
         except FileExistsError:
