@@ -1,0 +1,23 @@
+# 代理设置
+[proxy]
+host="127.0.0.1"
+port=10809
+
+# 下载设置
+[download]
+
+# 要下载的链接的存储位置,
+#目标为文件时直接读取,
+#目标为目录时, 读取内部所有.txt
+urlsPath=''
+dlpath="./down"
+overmove=''
+
+# 策略配置
+[strategy]
+dirExists='COVER'
+fileExists='SKIP'
+
+# 下载完成后的策略
+[completion]
+clearUrls=false
